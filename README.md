@@ -15,12 +15,12 @@ To deploy the contract, you will need to install the following tools:
 
 Then, follow these steps:
 
-1. Clone this repository and navigate to the project directory.
+1. Clone this repository and navigate to the program directory.
 2. Run ```solana build-sbf```.
 3. Make sure to config solana network to devenet and have alteast two solana using following commands ```solana config set --url devnet``` and ```solana airdrop 2```
 4. Run ```solana program deploy target/deploy/nft.so``` to deploy the program to the Solana devnet. Note the program ID that is returned.
 
 # Client Testing
 
-1. Install dependencies.
-
+1. Navigate to the program_client directory & Install dependencies ``` yarn install ```
+2. Run app.ts ``` npx ts-node app.ts <YOUR_PROGRAM_ID>```
